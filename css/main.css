@@ -1,0 +1,580 @@
+
+@import url("reset.css");
+@import url("common.css");
+*{
+	margin:0;
+	padding:0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+	font-family: "Georgia","Noto Sans CJK TC","sans-serif";
+}
+ul{list-style: none;}
+a{text-decoration: none;}
+img{display: block;}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+/*banner*/
+.slider{
+	width: 100%;
+	height: 850px;
+    overflow: hidden;
+}
+.carousel{}
+.carousel > div{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.carousel img{
+	/*width: 100%;*/
+	max-height: 850px;	
+	overflow: hidden;
+
+}
+.dots-area>.slick-dots {
+	bottom: -100px;
+}
+div.dots-area{
+ /* width: 100%;
+  height: auto;
+  overflow: hidden;
+
+  font: 26px FontAwesome;
+  display: inline-block;
+  vertical-align: middle;
+  color: #FFF;
+  margin-left: 15px;
+  background: Transparent;
+  border: 0 none;*/
+}
+
+/*黑色區塊*/
+.headerTop{
+	position: absolute;
+	width: 40%;
+	height: 850px;
+	overflow: hidden;
+	right: 0px;
+	top: 0px;
+	background: #161616;
+	}
+
+
+.headerbtm{
+	width: 100%;
+	position: absolute;
+	height: auto;
+	overflow: hidden;
+	bottom: 0px;
+	background: #EFA740;
+}
+
+.headerbtm>h1{
+	text-align: center;
+    line-height: 170px;
+	font-family: Noto Sans CJK TC;
+	font-size: 48px;
+	color: #FCFCFC;
+}
+
+/*Experience The Idllic Beauty*/
+.headerInfo{
+     position: absolute;
+     top: 40%;
+     left: 20%;
+}
+
+.headerInfo>h1{	
+
+	font-size: 60px;
+	margin-bottom: 45px;
+	color: #FCFCFC;
+	font-family:Georgia;
+}
+
+.headerInfo>div>span{
+	font-family: Noto Sans CJK TC;
+	font-size: 40px;
+    padding-right: 52px;
+	/* White */
+	color: #FCFCFC;
+}
+
+
+
+/* feature */
+.feature{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding-bottom: 132px;
+	text-align: center;
+}
+.feature h1{
+	width: 200px;
+	display: inline-block;
+	text-align: center;
+	font-family: Noto Sans CJK TC;
+	font-weight: bold;
+	font-size: 46px;
+	color: #0F4C75;
+	padding: 94px 0 58px 0;
+}
+.owl-carousel{
+	margin-left: 6%;
+}
+ .marl-6{
+ 	margin-left: 6%;
+ }
+ .owl-carousel img{
+	max-height: 327px;
+ }
+.feature >.flex-box > .mid{
+    margin-left: 6%;
+    height: auto;
+	overflow: hidden;
+    
+    display: flex;
+    justify-content:  flex-end;
+    align-items: center;
+    
+}
+/*--------------------------------------------------------*/
+/* golftable */
+.golftable{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+
+.golftable>.table{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.golftable>.reserve{
+	width: 100%;
+	height: auto;
+	padding: 30px 0 58px 0;
+}
+.golftable h3{
+	margin: 0 auto;
+	padding-top: 28px;
+	padding-bottom: 28px;
+	width: 20%; 
+    text-align: center;
+
+	font-size: 24px;
+    font-family: Noto Sans CJK TC;
+    font-weight: bold;
+    color: #FCFCFC;
+    background: #EFA740;
+    box-shadow: 0px 4px 11px rgba(239, 167, 64, 0.25);
+}
+
+
+/* intro */
+.intro{
+	height: 1150px;
+	width: 100%;
+	overflow: hidden;
+	background-color: black;
+	color: #FCFCFC;
+	position: relative;
+}
+
+.content{
+	width: 100%;
+	position: absolute;
+	z-index: 99;
+	padding: 147px 6% 0 6%;
+}
+.content>.flex-box{
+	display: flex;
+    justify-content:  flex-start;
+    align-items: flex-start;
+}
+.content >.flex-box>.aboug-img{
+	width: 587px;
+	height: auto;
+	overflow: hidden;
+}
+.content >.flex-box>.aboug-img>img{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.introR{
+	width: 65%;
+    padding: 0 0 0 7%;
+	 
+}
+.introR>h1{
+	font-size: 48px;
+	line-height: 72px;
+	padding-bottom: 15px;
+	font-family: Georgia;
+	font-weight: bold;
+	display: inline-block;
+}
+.introR hr{
+	border-color:#FCFCFC;
+}
+
+.intro p{
+	font-size: 24px;
+	line-height: 42px;
+	padding-bottom: 48px;
+    font-family: Noto Sans CJK TC;
+}
+.introB{
+	width: 76%;
+	padding: 138px 99px 77px 0px;
+	 
+}
+
+.mob_img{display: none;}
+
+/* 藍色色塊 */
+.blue_R, .blue_L{
+	background: #0F4C75;
+	display: block;
+}
+.blue_R{
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 24%;
+	height: 720px;
+}
+.blue_L{
+    position: absolute;
+    z-index: 2;
+    right: 0px;
+    bottom: 0px;
+    width: 24%;
+    height: 416px;
+}
+
+
+/* schedule */
+.schedule{
+	width: 100%;
+    height: auto;
+    overflow: hidden;
+	padding: 80px 5% 78px 6%;
+	
+	background: #0F4C75;
+	color: #FCFCFC;
+	
+}
+
+.schedule h1{
+	display: inline-block;
+	font-weight: bold;
+	font-size: 48px;
+	padding-bottom: 58px;
+	font-family: Noto Sans CJK TC;
+}
+.schedule hr{
+	border-color:#FCFCFC;
+}
+
+.schedule ul{
+	float: left;
+	width: 46%;
+}
+.schedule ul>li{
+	font-size: 24px;
+	line-height: 48px;
+	font-family: Noto Sans CJK TC;
+}
+.schedule ul:first-child{
+	margin-right: 8%;
+}
+
+/*section 我們的服務*/
+section{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+section > .title{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+section > .title > h1{
+	padding: 82px 0 38px 0;
+	font-size: 48px;
+	text-align: center;
+	font-family: Noto Sans CJK TC;
+	font-weight: bold;
+	color: #0F4C75;
+}
+section hr{
+	display: none;
+}
+
+ 
+
+section>.service1{
+	margin: 0 11%;
+	text-align: center;
+}
+
+section>.service2{
+	margin: 0 23%;
+	text-align: center;
+}
+section>.service1>div,
+section>.service2>div{
+	padding-bottom: 105px;
+}
+section>.flex-box{
+
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+}
+ 
+section img{
+	width: 100%;
+	height: auto;
+}
+section p{
+	font-family: Noto Sans CJK TC;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 36px;
+	color: #0F4C75;
+}
+section> div:last-child{
+	width: 100%;
+	height: auto;
+	padding: 30px 10px 58px 10px;
+}
+section h3{
+	margin: 0 auto;
+	padding-top: 22px;
+	padding-bottom: 22px;
+	width: 20%; 
+    text-align: center;
+
+	font-size: 24px;
+    font-family: Noto Sans CJK TC;
+    font-weight: bold;
+    color: #FCFCFC;
+    background: #EFA740;
+    box-shadow: 0px 4px 11px rgba(239, 167, 64, 0.25);
+}
+ 
+
+ /* mobile */
+
+@media screen and (max-width: 375px){
+	header >.logo>img{
+	width: 42px;
+	height: 30px;
+	}
+	.slider{
+	height: 650px;
+    }
+	.headerTop {
+    height: 650px;
+	}
+	.headerbtm {
+    height: 50px;
+	}
+	.headerbtm>h1 {
+    line-height: 50px;
+    font-size: 24px;
+	}
+	.headerInfo {
+    top: 30%;
+    left: 12%;
+	}
+	.headerInfo>h1{	
+	font-size: 48px;
+	margin-bottom: 34px;
+	}
+
+	.headerInfo>div>span{
+	font-size: 24px;
+    padding-right: 16px;
+	}
+	.headerInfo>div>span:nth-child(3){
+	 display: block;
+	}
+	.dots-area>.slick-dots {
+    bottom: 176px;
+	}
+	/*feature*/
+	.feature{
+		height: 460px;
+	}
+	.feature h1{
+		width: 144px;
+		font-size: 36px;
+		padding: 33px 0 46px 0;
+		display: inline-block;
+	}
+	.feature hr{
+		display: inline-block;
+		margin: 16px 15px;
+	}
+	.feature >.flex-box > .mid{
+		margin-left: 0;
+		flex-direction: column;
+	}
+	.feature img{
+		width: 100%;
+		height: 271px;
+		margin-bottom: 5px;
+	}
+	
+	.owl-carousel{
+		margin-left: 0%;
+	}
+	
+	/*golftable*/
+	.golftable {
+		height: auto;
+		
+	}
+	.golftable h1{
+		font-size: 24px;
+		padding: 30px 0 16px 0;
+	}
+ 
+	.golftable h3 {
+	    margin: 0 auto;
+	    width: 48%;  
+	}
+
+	/*intro*/
+	.blue_R {
+	    width: 30%;
+	    height: 239px;
+	}
+	.blue_L {
+	    width: 30%;
+	    height: 290px;
+	}
+	.intro{
+		height: 1330px;
+	}
+	.introR {
+	    width: 100%;
+	    padding: 0 15px;
+	}
+	.introB {
+	    width: 100%;
+	    padding: 117px 15px 60px 15px;
+	}
+	 
+	.content{
+		padding: 0px 0 0 0px;
+	}
+	 
+	.content>.flex-box {
+		flex-direction: column;
+	}
+	.content>.flex-box >.aboug-img>img {
+		display: none;
+	}
+
+	.mob_img{
+			display: block;
+			width: 255px;
+			height: 217px;
+			margin-left: -15px;
+		}
+
+	.introR>h1{
+		font-size: 24px;
+	    padding-top: 70px;
+	    padding-left: 10%;
+	    padding-bottom: 40px;
+	}
+	.intro p {
+	    font-size: 22px;
+	    line-height: 32px;
+	    padding-bottom: 0px;
+	}
+	.introR>p{
+		padding-top: 40px;
+	}
+	 
+	.introB>p:first-child{
+		padding-bottom: 48px;
+	}
+	/*schedule*/
+	.schedule {
+		padding: 36px 12px 61px 15px;
+	}
+	.schedule h1{
+		font-size: 24px;
+	    padding-bottom: 35px;
+	}
+	.schedule ul {
+	    float: none;
+	    width: 100%;
+	}
+	.schedule ul>li {
+	    font-size: 18px;
+	    line-height: 36px;
+	}
+	.schedule ul:first-child {
+	    margin-right: 0%;
+	}
+	.schedule span{
+		display: block;
+	}
+	/*section*/
+	section{
+	}
+	section >div:first-child{
+		text-align: center;
+	}
+	section>.title> h1 {
+	    padding: 28px 0 50px 0;
+	    font-size: 36px;
+	    display: inline-block;
+	}
+	section hr{
+		display: inline-block;
+		margin: 16px 15px;
+	}
+	section p{
+		width: 264px;
+	}
+	section img {
+	    width: 264px;
+	    height: 140px;
+	}
+	section >.flex-box{
+		padding-bottom: 0px;
+	}
+	section > .service1>div,
+	section > .service2>div{
+		padding-bottom: 65px;
+	}
+	section>.service2 {
+	    margin: 0 11%;
+	}
+	section>.service2>.last {
+	    margin-bottom: 0px;
+	}
+	section .reserve{
+		display: none;
+	}
+
+}
+
