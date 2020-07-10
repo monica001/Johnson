@@ -5,9 +5,8 @@
   src: 
        url('../fonts/NotoSansCJKTC/NotoSansCJKtc-Regular.otf') format("opentype")
 }
-.test{
+ 
 
-}
  /*中間的過度的橫線*/
 	hr{
 		width: 168px;
@@ -41,7 +40,7 @@
 		overflow: hidden;	
 	}
 
- /*PC nav*/
+/* PC nav */
 	.menu{
 		position: absolute;
 	    right: 50px;
@@ -52,14 +51,14 @@
 	    display: block;
 	    float: left;
 	    margin-left: 35px;
-	    padding-bottom: 6px;
+	    
 	}
 	.menu div >a{
 		font-size: 24px;
 		color: #FCFCFC;
 		font-family: Noto Sans CJK TC;
 	}
-	.menu div:hover{
+	.menu div >a:hover{
 	    border-bottom: 5px solid #FCFCFC;
 	    font-weight: bold;
 	}
@@ -68,47 +67,57 @@
 
 
 /* map */
-.map{
-	width: 100%;
-	height: auto;
-	overflow: hidden;
-}
-.bg-container{
-  width: 25%;
-  height: 650px;
-  overflow: hidden;
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-} 
-.bg-container .blackcover{
-  position: absolute;
-  z-index:1;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-}
- .continent{
- 	width: 70%;
-    margin: 0 auto;
-    padding-top: 180px;
- }
-.map p{
-	font-family: Noto Sans CJK TC;
-    font-size: 24px;
-    color: #FCFCFC;
-    position: absolute;
-    margin: 0 auto;
-    left: 50%;
-    bottom: 12%;
-    transform: translateX(-50%);
-}
-	.map>div:first-child{background-image: url('../images/temp.jpg');}
-	.map>div:nth-child(2){background-image: url('../images/temp.jpg');}
-	.map>div:nth-child(3){background-image: url('../images/temp.jpg');}
-	.map>div:nth-child(4){background-image: url('../images/temp.jpg');}
 
- 
+	.map{
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+	}
+	.continent{
+	  width: 25%;
+	  height: auto;
+	  overflow: hidden;
+	  position: relative;
+
+	} 
+
+	.continent >.senece-map{
+		width: 100%;
+		height: 650px;
+		overflow: hidden;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.white-map-wrap{
+	  width: 100%;
+	  position: absolute;
+	  z-index:1;
+	  top: 29%;
+	}
+
+	.white-map{
+	    margin: 0 auto;
+	 }
+
+	.map p{
+		font-family: Noto Sans CJK TC;
+	    font-size: 24px;
+	    color: #FCFCFC;
+	    position: absolute;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    bottom: 30%;
+	}
+
+
+	.am-w{width: 65%;}
+	.other-w{width: 50%;}
+
+	.am{background-image: url('../images/Rectangle 6.jpg');}
+	.eu{background-image: url('../images/Rectangle 199.jpg');}
+	.asia{background-image: url('../images/Rectangle 200.jpg');}
+	.aus{background-image: url('../images/Rectangle 201.jpg');}
 
 	.map.flex-box{
 	    display: flex;
@@ -116,7 +125,6 @@
 	}
 
 	 
-
 
 /*footer*/
 	footer{
@@ -159,7 +167,7 @@
 	 
 	.foo_left{
 		float: left;
-		padding-top: 100px;
+		padding-top: 114px;
 	}
 
 	.foo_right{
@@ -227,38 +235,130 @@
 	}
 
 
- /* mobile */
+ /* ---------- 1200  ----------*/
+@media screen and (max-width: 1200px){
+	.menu div{
+	    margin-left: 24px;
+	}
+	.menu div >a{
+		font-size: 23px;
+	}
+		
+}
 
-@media screen and (max-width: 375px){
-	.mob_Open{
-		display: block;
-  
+/* ---------- 1024 iPad  ----------*/
+@media screen and (max-width:1024px){
+	.continent >.senece-map{
+		height: 462px;
 	}
-	header>nav{
-		display: none;
+	footer >div {
+  	  padding: 40px 8% 40px 5%;
 	}
+	footer h3 {
+	    font-size: 32px;
+	    line-height: 48px;
+	}
+	.foo_left {
+	    padding-top: 134px;
+	}
+	.foo_right {
+	    padding-top: 20px;
+	}
+}
+
+/* ---------- 768 iPad  ----------*/
+@media screen and (max-width: 768px){
 	
-	.map{
-		height: 1000px;
+	.mob_Open{display: block;}
+	
+	header>nav{display: none;}
+	
+	.continent >.senece-map{
+		height: 345px;
 	}
-	.map img{
-		height: 250px;
+	.map p{
+		font-size: 20px;
 	}
-
-	.bg-container {
-    width: 100%;
-    height: 250px;
-    }
-    .continent{
-    	padding-top: 20px;
-    }
-
-    .map.flex-box{
-		flex-direction: column;
+	.map>div:last-child>p{
+		min-width: 100px;
 	}
  
+	footer >div {
+  	  padding: 27px 8% 40px 5%;
+	}
+	footer h3 {
+	    font-size: 28px;
+	    line-height: 40px;
+	}
+	footer span,footer p{
+		font-size: 20px;
+	}
+	footer span{
+		line-height: 40px;	
+	}
+	footer .flex-box{
+		padding-top: 50px;
+	    display: flex;
+	    flex-direction: column-reverse;
+	}
+	.foo_right{
+		float: none;
+	}
+	.foo_left {
+	    float: none;
+	    padding-top: 6px;
+	    padding-left: 80%;
+	}
+}
+
+ /* ---------- mobile 414 ----------*/
+@media screen and (max-width: 414px){
+	header >.logo>img{
+		width: 42px;
+		height: 30px;
+		margin: 11px 0 0 16px;
+	}
+
+	footer table i:first-child{
+		padding-bottom: 30px;
+	}
+
+	.map{
+		height: 1000px;
+		height: auto;
+   		overflow: hidden;
+	}
+
+    .continent{
+    	width: 100%;
+   		height: auto;
+   		overflow: hidden;
+    }
+	.continent >.senece-map{
+		height: 250px;
+	}
+	.white-map-wrap {
+		top: 16%;
+	}
+	 .map p{
+		bottom: 12%;
+	}
+	
+	.am-w{width: 40%;}
+	.other-w{width: 33%;}
+
+	.am{background-image: url('../images/Rectangle 6-1.jpg');}
+	.eu{background-image: url('../images/Rectangle 199-1.jpg');}
+	.asia{background-image: url('../images/Rectangle 200-1.jpg');}
+	.aus{background-image: url('../images/Rectangle 212-1.jpg');}
+    .map.flex-box{flex-direction: column;}
+}
+
+ /* ---------- mobile 375 ----------*/
+@media screen and (max-width: 375px){
+ 
 	footer{
-		height: 620px;
+		/* height: 620px; */
 	}
 	footer >div{
 		padding: 24px 26px 32px 5%;
@@ -282,19 +382,7 @@
 		line-height: 36px;	
 	}
 	 
-	footer .flex-box{
-		padding-top: 74px;
-	    display: flex;
-	    flex-direction: column-reverse;
-	}
-	.foo_right{
-		float: none;
-	}
-	.foo_left {
-	    float: none;
-	    padding-top: 6px;
-	    padding-left: 68%;
-	}
+	
 
 	/*hr橫線*/
 	hr{

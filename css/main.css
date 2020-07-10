@@ -17,375 +17,555 @@ html,body{
     height: 100%;
 }
 /*banner*/
-.slider{
-	width: 100%;
-	height: 850px;
-    overflow: hidden;
-}
-.carousel{}
-.carousel > div{
-	width: 100%;
-	height: auto;
-	overflow: hidden;
-}
-.carousel img{
-	/*width: 100%;*/
-	max-height: 850px;	
-	overflow: hidden;
+	.slider{
+		width: 100%;
+		height: 850px;
+	    overflow: hidden;
+	}
+	.carousel{}
+	.carousel > div{
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+	}
+	.carousel img{
+		/*width: 100%;*/
+		max-height: 850px;	
+		overflow: hidden;
+	}
+	.dots-area>.slick-dots {
+		bottom: -100px;
+	}
+	div.dots-area{
+	 /* width: 100%;
+	  height: auto;
+	  overflow: hidden;
 
-}
-.dots-area>.slick-dots {
-	bottom: -100px;
-}
-div.dots-area{
- /* width: 100%;
-  height: auto;
-  overflow: hidden;
-
-  font: 26px FontAwesome;
-  display: inline-block;
-  vertical-align: middle;
-  color: #FFF;
-  margin-left: 15px;
-  background: Transparent;
-  border: 0 none;*/
-}
-
-/*黑色區塊*/
-.headerTop{
-	position: absolute;
-	width: 40%;
-	height: 850px;
-	overflow: hidden;
-	right: 0px;
-	top: 0px;
-	background: #161616;
+	  font: 26px FontAwesome;
+	  display: inline-block;
+	  vertical-align: middle;
+	  color: #FFF;
+	  margin-left: 15px;
+	  background: Transparent;
+	  border: 0 none;*/
 	}
 
+	/*黑色區塊*/
+	.headerTop{
+		position: absolute;
+		width: 40%;
+		height: 850px;
+		overflow: hidden;
+		right: 0px;
+		top: 0px;
+		background: #161616;
+		}
 
-.headerbtm{
-	width: 100%;
-	position: absolute;
-	height: auto;
-	overflow: hidden;
-	bottom: 0px;
-	background: #EFA740;
-}
 
-.headerbtm>h1{
-	text-align: center;
-    line-height: 170px;
-	font-family: Noto Sans CJK TC;
-	font-size: 48px;
-	color: #FCFCFC;
-}
+	.headerbtm{
+		width: 100%;
+		position: absolute;
+		height: auto;
+		overflow: hidden;
+		bottom: 0px;
+		background: #EFA740;
+		cursor:pointer;
+	}
 
-/*Experience The Idllic Beauty*/
-.headerInfo{
-     position: absolute;
-     top: 40%;
-     left: 20%;
-}
+	.headerbtm>h1{
+		text-align: center;
+	    line-height: 170px;
+		font-family: Noto Sans CJK TC;
+		font-size: 48px;
+		color: #FCFCFC;
+	}
 
-.headerInfo>h1{	
+	/*Experience The Idllic Beauty*/
+	.headerInfo{
+	     position: absolute;
+	     top: 40%;
+	     left: 20%;
+	}
 
-	font-size: 60px;
-	margin-bottom: 45px;
-	color: #FCFCFC;
-	font-family:Georgia;
-}
+	.headerInfo>h1{	
 
-.headerInfo>div>span{
-	font-family: Noto Sans CJK TC;
-	font-size: 40px;
-    padding-right: 52px;
-	/* White */
-	color: #FCFCFC;
-}
+		font-size: 60px;
+		margin-bottom: 45px;
+		color: #FCFCFC;
+		font-family:Georgia;
+	}
+
+	.headerInfo>div>span{
+		font-family: Noto Sans CJK TC;
+		font-size: 40px;
+	    padding-right: 52px;
+		color: #FCFCFC;
+	}
 
 
 
 /* feature */
-.feature{
-	width: 100%;
-	height: auto;
-	overflow: hidden;
-	padding-bottom: 132px;
-	text-align: center;
-}
-.feature h1{
-	width: 200px;
-	display: inline-block;
-	text-align: center;
-	font-family: Noto Sans CJK TC;
-	font-weight: bold;
-	font-size: 46px;
-	color: #0F4C75;
-	padding: 94px 0 58px 0;
-}
-.owl-carousel{
-	margin-left: 6%;
-}
- .marl-6{
- 	margin-left: 6%;
- }
- .owl-carousel img{
-	max-height: 327px;
- }
-.feature >.flex-box > .mid{
-    margin-left: 6%;
-    height: auto;
-	overflow: hidden;
-    
-    display: flex;
-    justify-content:  flex-end;
-    align-items: center;
-    
-}
-/*--------------------------------------------------------*/
+	.feature{
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		padding-bottom: 132px;
+		text-align: center;
+	}
+	.feature h1{
+		width: 200px;
+		display: inline-block;
+		text-align: center;
+		font-family: Noto Sans CJK TC;
+		font-weight: bold;
+		font-size: 46px;
+		color: #0F4C75;
+		padding: 94px 0 58px 0;
+	}
+	.owl-carousel{
+		margin-left: 6%;
+	}
+	 .marl-6{
+	 	margin-left: 6%;
+	 }
+	 .owl-carousel img{
+		max-height: 327px;
+	 }
+	.feature >.flex-box > .mid{
+	    margin-left: 6%;
+	    height: auto;
+		overflow: hidden;
+	    
+	    display: flex;
+	    justify-content:  flex-end;
+	    align-items: center;  
+	}
+
 /* golftable */
-.golftable{
-	width: 100%;
-	height: auto;
-	overflow: hidden;
-}
+	.golftable{
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+	}
+	.golftable>.mob-table{
+		display: none;
+	}
 
+	.golftable>.table{
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+	}
+	.golftable>.reserve{
+		width: 100%;
+		height: auto;
+		padding: 30px 0 58px 0;
+	}
+	.golftable h3{
+		margin: 0 auto;
+		padding-top: 28px;
+		padding-bottom: 28px;
+		width: 20%; 
+	    text-align: center;
 
-.golftable>.table{
-	width: 100%;
-	height: auto;
-	overflow: hidden;
-}
-.golftable>.reserve{
-	width: 100%;
-	height: auto;
-	padding: 30px 0 58px 0;
-}
-.golftable h3{
-	margin: 0 auto;
-	padding-top: 28px;
-	padding-bottom: 28px;
-	width: 20%; 
-    text-align: center;
-
-	font-size: 24px;
-    font-family: Noto Sans CJK TC;
-    font-weight: bold;
-    color: #FCFCFC;
-    background: #EFA740;
-    box-shadow: 0px 4px 11px rgba(239, 167, 64, 0.25);
-}
+		font-size: 24px;
+	    font-family: Noto Sans CJK TC;
+	    font-weight: bold;
+	    color: #FCFCFC;
+	    background: #EFA740;
+	    box-shadow: 0px 4px 11px rgba(239, 167, 64, 0.25);
+	}
 
 
 /* intro */
-.intro{
-	height: 1150px;
-	width: 100%;
-	overflow: hidden;
-	background-color: black;
-	color: #FCFCFC;
-	position: relative;
-}
+	.intro{
+		height: 1150px;
+		width: 100%;
+		overflow: hidden;
+		background-color: black;
+		color: #FCFCFC;
+		position: relative;
+	}
 
-.content{
-	width: 100%;
-	position: absolute;
-	z-index: 99;
-	padding: 147px 6% 0 6%;
-}
-.content>.flex-box{
-	display: flex;
-    justify-content:  flex-start;
-    align-items: flex-start;
-}
-.content >.flex-box>.aboug-img{
-	width: 587px;
-	height: auto;
-	overflow: hidden;
-}
-.content >.flex-box>.aboug-img>img{
-	width: 100%;
-	height: auto;
-	overflow: hidden;
-}
-.introR{
-	width: 65%;
-    padding: 0 0 0 7%;
-	 
-}
-.introR>h1{
-	font-size: 48px;
-	line-height: 72px;
-	padding-bottom: 15px;
-	font-family: Georgia;
-	font-weight: bold;
-	display: inline-block;
-}
-.introR hr{
-	border-color:#FCFCFC;
-}
+	.content{
+		width: 100%;
+		position: absolute;
+		z-index: 99;
+		padding: 147px 6% 0 6%;
+	}
+	.content>.flex-box{
+		display: flex;
+	    justify-content:  flex-start;
+	    align-items: flex-start;
+	}
+	.content >.flex-box>.aboug-img{
+		width: 587px;
+		height: auto;
+		overflow: hidden;
+	}
+	.content >.flex-box>.aboug-img>img{
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+	}
+	.introR{
+		width: 65%;
+	    padding: 0 0 0 7%;
+		 
+	}
+	.introR>h1{
+		font-size: 48px;
+		line-height: 72px;
+		padding-bottom: 15px;
+		font-family: Georgia;
+		font-weight: bold;
+		display: inline-block;
+	}
+ 
+	.introR-hr-box{
+		width: 168px;
+		display: inline-block;
+	}
 
-.intro p{
-	font-size: 24px;
-	line-height: 42px;
-	padding-bottom: 48px;
-    font-family: Noto Sans CJK TC;
-}
-.introB{
-	width: 76%;
-	padding: 138px 99px 77px 0px;
-	 
-}
+	.introR hr{
+		width: 100%;
+		border-color:#FCFCFC;
+		margin-left: 0px;
+	}
+	.intro p{
+		font-size: 24px;
+		line-height: 42px;
+		padding-bottom: 48px;
+	    font-family: Noto Sans CJK TC;
+	}
+	.introB{
+		width: 76%;
+		padding: 138px 99px 77px 0px;
+		 
+	}
 
-.mob_img{display: none;}
+	.mob_img{display: none;}
 
 /* 藍色色塊 */
-.blue_R, .blue_L{
-	background: #0F4C75;
-	display: block;
-}
-.blue_R{
-	position: absolute;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	width: 24%;
-	height: 720px;
-}
-.blue_L{
-    position: absolute;
-    z-index: 2;
-    right: 0px;
-    bottom: 0px;
-    width: 24%;
-    height: 416px;
-}
+	.blue_R, .blue_L{
+		background: #0F4C75;
+		display: block;
+	}
+	.blue_R{
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		width: 24%;
+		height: 720px;
+	}
+	.blue_L{
+	    position: absolute;
+	    z-index: 2;
+	    right: 0px;
+	    bottom: 0px;
+	    width: 24%;
+	    height: 416px;
+	}
+
 
 
 /* schedule */
-.schedule{
-	width: 100%;
-    height: auto;
-    overflow: hidden;
-	padding: 80px 5% 78px 6%;
-	
-	background: #0F4C75;
-	color: #FCFCFC;
-	
-}
+	.schedule{
+		width: 100%;
+	    height: auto;
+	    overflow: hidden;
+		padding: 80px 5% 78px 6%;
+		
+		background: #0F4C75;
+		color: #FCFCFC;
+	}
 
-.schedule h1{
-	display: inline-block;
-	font-weight: bold;
-	font-size: 48px;
-	padding-bottom: 58px;
-	font-family: Noto Sans CJK TC;
-}
-.schedule hr{
-	border-color:#FCFCFC;
-}
+	.schedule h1{
+		display: inline-block;
+		font-weight: bold;
+		font-size: 48px;
+		padding-bottom: 58px;
+		font-family: Noto Sans CJK TC;
+	}
+	.schedule hr{
+		border-color:#FCFCFC;
+	}
 
-.schedule ul{
-	float: left;
-	width: 46%;
-}
-.schedule ul>li{
-	font-size: 24px;
-	line-height: 48px;
-	font-family: Noto Sans CJK TC;
-}
-.schedule ul:first-child{
-	margin-right: 8%;
-}
+	.schedule ul{
+		float: left;
+		width: 46%;
+	}
+	.schedule ul>li{
+		font-size: 24px;
+		line-height: 48px;
+		font-family: Noto Sans CJK TC;
+	}
+	.schedule ul:first-child{
+		margin-right: 8%;
+	}
 
 /*section 我們的服務*/
-section{
-	width: 100%;
-	height: auto;
-	overflow: hidden;
-}
-section > .title{
-	width: 100%;
-	height: auto;
-	overflow: hidden;
-}
-section > .title > h1{
-	padding: 82px 0 38px 0;
-	font-size: 48px;
-	text-align: center;
-	font-family: Noto Sans CJK TC;
-	font-weight: bold;
-	color: #0F4C75;
-}
-section hr{
-	display: none;
-}
-
- 
-
-section>.service1{
-	margin: 0 11%;
-	text-align: center;
-}
-
-section>.service2{
-	margin: 0 23%;
-	text-align: center;
-}
-section>.service1>div,
-section>.service2>div{
-	padding-bottom: 105px;
-}
-section>.flex-box{
-
-    display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-content: space-around;
-}
- 
-section img{
-	width: 100%;
-	height: auto;
-}
-section p{
-	font-family: Noto Sans CJK TC;
-	font-weight: bold;
-	font-size: 24px;
-	line-height: 36px;
-	color: #0F4C75;
-}
-section> div:last-child{
-	width: 100%;
-	height: auto;
-	padding: 30px 10px 58px 10px;
-}
-section h3{
-	margin: 0 auto;
-	padding-top: 22px;
-	padding-bottom: 22px;
-	width: 20%; 
-    text-align: center;
-
-	font-size: 24px;
-    font-family: Noto Sans CJK TC;
-    font-weight: bold;
-    color: #FCFCFC;
-    background: #EFA740;
-    box-shadow: 0px 4px 11px rgba(239, 167, 64, 0.25);
-}
- 
-
- /* mobile */
-
-@media screen and (max-width: 375px){
-	header >.logo>img{
-	width: 42px;
-	height: 30px;
+	section{
+		width: 100%;
+		height: auto;
+		overflow: hidden;
 	}
+	section > .title{
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+	}
+	section > .title > h1{
+		padding: 80px 0 50px 0;
+		font-size: 48px;
+		text-align: center;
+		font-family: Noto Sans CJK TC;
+		font-weight: bold;
+		color: #0F4C75;
+	}
+	section hr{
+		display: none;
+	}
+
+	 
+
+	section>.service1{
+		margin: 0 11%;
+		text-align: center;
+	}
+
+	section>.service2{
+		margin: 0 23%;
+		text-align: center;
+	}
+	section>.service1>div,
+	section>.service2>div{
+		margin-bottom: 70px;
+		height: 180px;
+		background-position: center bottom;
+		background-repeat: no-repeat;
+	}
+
+	section>.flex-box{
+	    display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-content: space-around;
+	}
+	 section>.service1>div:first-child{background-image: url('../images/Frame.png')}
+	 section>.service1>div:nth-child(2){background-image: url('../images/Frame-1.png')}
+	 section>.service1>div:nth-child(3){background-image: url('../images/Frame-2.png')}
+	 section>.service2>div:first-child{background-image: url('../images/Frame-3.png')}
+	 section>.service2>div:nth-child(2){background-image: url('../images/Group 11.png')}
+
+	section img{
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+	}
+	section p{
+		padding: 0px 20px;
+		font-family: Noto Sans CJK TC;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 36px;
+		color: #0F4C75;
+	}
+	section> div:last-child{
+		width: 100%;
+		height: auto;
+		padding: 39px 10px 58px 10px;
+	}
+	section h3{
+		margin: 0 auto;
+		padding-top: 22px;
+		padding-bottom: 22px;
+		width: 20%; 
+	    text-align: center;
+
+		font-size: 24px;
+	    font-family: Noto Sans CJK TC;
+	    font-weight: bold;
+	    color: #FCFCFC;
+	    background: #EFA740;
+	    box-shadow: 0px 4px 11px rgba(239, 167, 64, 0.25);
+	}
+
+
+/* ---------- 1200  ----------*/
+@media screen and (max-width: 1200px){
+	.headerInfo>h1{	
+	font-size: 50px;
+	margin-bottom: 30px;
+   }
+
+	.headerInfo>div>span{
+		font-size: 30px;
+	    padding-right: 40px;
+	}
+}
+
+/* ---------- 1024 iPad  ----------*/
+@media screen and (max-width: 1024px){
+	.headerTop,.slider{
+		height: 604px;
+	}
+	.headerInfo {
+    top: 35%;
+    left: 14%;
+	}
+	.headerInfo>h1{	/*標題*/
+	font-size: 42px;
+    }
+   	.headerInfo>div>span{
+		font-size: 26px;
+        padding-right: 36px;
+	}
+	.headerbtm>h1 {
+    line-height: 120px;
+    font-size: 36px;
+    }
+	.carousel img{
+		max-height: 604px;	
+	}
+	.dots-area>.slick-dots {
+       bottom: 174px;
+	}
+	.feature h1,
+	.schedule h1,
+	section > .title > h1 {
+		font-size: 42px;
+	}
+
+	.intro{height: 836px;}
+	.introR {
+    width: 70%;
+    padding: 0 0 0 5%;
+	}
+	.introR>h1 {
+		font-size: 36px;
+		padding-bottom: 0px;
+		padding-right: 5px;
+		line-height: 60px;
+	}
+	.golftable h3{
+		padding-top: 20px;
+		padding-bottom: 20px;		
+	}
+	.content {padding: 104px 6% 0 6%;}
+	
+	.intro p {
+    font-size: 22px;
+    line-height: 36px;
+    padding-bottom: 10px;
+  
+	}
+	.introB {
+  	  width: 100%;
+      padding: 68px 70px 50px 0px;
+	}
+	.blue_R{height: 520px;}
+	.blue_L {height: 295px;}
+	.schedule ul>li {
+	    font-size: 22px;
+	    line-height: 44px;
+	}
+	.map p{font-size: 20px;}
+}
+
+@media screen and (max-width: 830px){
+	.introR>h1 {
+		font-size: 32px;
+ 	   line-height: 48px;
+	}
+	.introB {
+    padding: 38px 0px 50px 0px;
+	}
+}
+
+/* ---------- 768 iPad  ----------*/
+@media screen and (max-width: 768px){
+	.headerInfo {
+	    top: 27%;
+	    left: 11%;
+	}
+		.headerInfo>h1 {
+	    font-size: 40px;
+	    margin-bottom: 16px;
+	}
+	.dots-area>.slick-dots {
+	    bottom: 178px;
+	}
+	.feature{
+		padding-bottom: 70px;
+	}
+	.feature h1 {
+		padding: 50px 0 31px 0;
+	}
+	.feature h1  {
+	    font-size: 40px;
+	}
+	.feature hr  {
+	    width: 120px;
+	}
+	.golftable>.reserve {
+	    padding: 30px 0 30px 0;
+	}
+		.map p{font-size: 18px;}
+		.schedule span{
+			display: block;
+		}
+		.introR>h1 {
+	    font-size: 28px;
+	    line-height: 52px;
+	    padding-bottom: 10px;
+	}
+	.intro p {
+	    font-size: 20px;
+	    line-height: 34px;
+	    padding-bottom: 0px;
+	}
+	.schedule{
+		padding: 42px 3% 41px 4%;
+	}
+	.schedule ul:first-child {
+	    margin-right: 2%;
+	}
+	.schedule ul {
+	    width: 48%;
+	    padding-bottom: 31px;
+	}
+	.schedule ul>li {
+	    font-size: 20px;
+	    line-height: 36px;
+	}
+	section > .title > h1 {
+	    padding: 42px 0 50px 0;
+	}
+	section>.service1>div, section>.service2>div {
+	    margin-bottom: 46px;
+	    height: 180px;
+	}
+	section> div:last-child {
+	    padding: 21px 10px 31px 10px;
+	}
+	section h3 {
+	 	padding-bottom: 18px;
+	    padding-top: 18px;  
+	}
+}
+
+
+/* ---------- mobile 414 ----------*/
+
+@media screen and (max-width: 414px){
 	.slider{
 	height: 650px;
     }
+    .carousel img {
+    max-height: 650px;
+	}
 	.headerTop {
     height: 650px;
 	}
@@ -397,7 +577,7 @@ section h3{
     font-size: 24px;
 	}
 	.headerInfo {
-    top: 30%;
+    top: 24%;
     left: 12%;
 	}
 	.headerInfo>h1{	
@@ -413,9 +593,12 @@ section h3{
 	 display: block;
 	}
 	.dots-area>.slick-dots {
-    bottom: 176px;
+    bottom: 100px;
 	}
-	/*feature*/
+
+
+
+/*feature*/
 	.feature{
 		height: 460px;
 	}
@@ -428,6 +611,7 @@ section h3{
 	.feature hr{
 		display: inline-block;
 		margin: 16px 15px;
+		width: 85px;
 	}
 	.feature >.flex-box > .mid{
 		margin-left: 0;
@@ -442,11 +626,28 @@ section h3{
 	.owl-carousel{
 		margin-left: 0%;
 	}
-	
+
+
 	/*golftable*/
 	.golftable {
 		height: auto;
 		
+	}
+	.golftable>.table{
+		display: none;
+	}
+	.golftable>.mob-table{
+		display: block;
+	}
+	.golftable>.mob-table>img{
+		margin: 0 auto;
+	}
+	.golftable>.mob-table>img:first-child{
+		padding-top: 30px;
+		padding-bottom: 16px;
+	}
+	.golftable>.mob-table>div{
+		overflow: scroll;
 	}
 	.golftable h1{
 		font-size: 24px;
@@ -456,7 +657,11 @@ section h3{
 	.golftable h3 {
 	    margin: 0 auto;
 	    width: 48%;  
+	    padding-top: 10px;
+  	    padding-bottom: 10px;
+  	    margin-top: 0px;
 	}
+
 
 	/*intro*/
 	.blue_R {
@@ -468,11 +673,20 @@ section h3{
 	    height: 290px;
 	}
 	.intro{
-		height: 1330px;
+		height: 1180px;
 	}
 	.introR {
 	    width: 100%;
 	    padding: 0 15px;
+	}
+	.introR-hr-box{
+		width: 100px;
+	}
+	.introR-hr-box>hr{
+		margin-left: 25px;
+	    margin-top: 0px;
+	    margin-bottom: 8px;
+
 	}
 	.introB {
 	    width: 100%;
@@ -500,7 +714,7 @@ section h3{
 	.introR>h1{
 		font-size: 24px;
 	    padding-top: 70px;
-	    padding-left: 10%;
+	    padding-left: 1%;
 	    padding-bottom: 40px;
 	}
 	.intro p {
@@ -515,13 +729,15 @@ section h3{
 	.introB>p:first-child{
 		padding-bottom: 48px;
 	}
+
+
 	/*schedule*/
 	.schedule {
 		padding: 36px 12px 61px 15px;
 	}
 	.schedule h1{
 		font-size: 24px;
-	    padding-bottom: 35px;
+	    padding-bottom: 25px;
 	}
 	.schedule ul {
 	    float: none;
@@ -534,9 +750,12 @@ section h3{
 	.schedule ul:first-child {
 	    margin-right: 0%;
 	}
-	.schedule span{
-		display: block;
+	.schedule hr{
+		width: 100px;
+	    margin-left: 15px;
+	    margin-bottom: 8px;
 	}
+
 	/*section*/
 	section{
 	}
@@ -549,11 +768,12 @@ section h3{
 	    display: inline-block;
 	}
 	section hr{
+		width: 50px;
 		display: inline-block;
 		margin: 16px 15px;
 	}
 	section p{
-		width: 264px;
+		width: 310px;
 	}
 	section img {
 	    width: 264px;
@@ -564,6 +784,7 @@ section h3{
 	}
 	section > .service1>div,
 	section > .service2>div{
+		height: 205px;
 		padding-bottom: 65px;
 	}
 	section>.service2 {
@@ -575,6 +796,20 @@ section h3{
 	section .reserve{
 		display: none;
 	}
+}
 
+/* ---------- mobile 375 ----------*/ 
+@media screen and (max-width: 375px){
+	.dots-area>.slick-dots {
+    bottom: 176px;
+    }
+	 .intro{
+		height: 1330px;
+	}
+	.feature hr{width: 50px;} 
+		.schedule h1{
+	 
+	    padding-bottom: 35px;
+	}
 }
 
