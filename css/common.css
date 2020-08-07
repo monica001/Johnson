@@ -17,6 +17,21 @@
 	    border-bottom-width: 1px;
 	}
 
+
+	h3.reserve{
+		margin: 0 auto;
+		padding-top: 22px;
+		padding-bottom: 22px;
+		width: 20%; 
+	    text-align: center;
+
+		font-size: 24px;
+	    font-family: Noto Sans CJK TC;
+	    font-weight: bold;
+	    color: #FCFCFC;
+	    background: #EFA740;
+	    box-shadow: 0px 4px 11px rgba(239, 167, 64, 0.25);
+	}
  /*header*/
 	header{
 		width: 100%;
@@ -25,7 +40,7 @@
 		position: absolute;
 	    top: 0;
 	    left: 0;
-	    z-index: 1
+	    z-index: 99
 	}
 
 	header >.logo{
@@ -40,12 +55,14 @@
 		overflow: hidden;	
 	}
 
+
 /* PC nav */
 	.menu{
 		position: absolute;
-	    right: 50px;
 	    top: 32px;
-	    z-index: 1;
+	    right: 0px;
+	    padding-right: 50px;
+	    
 	}
 	.menu div{
 	    display: block;
@@ -54,7 +71,7 @@
 	    
 	}
 	.menu div >a{
-		font-size: 24px;
+		font-size: 21px;
 		color: #FCFCFC;
 		font-family: Noto Sans CJK TC;
 	}
@@ -63,7 +80,19 @@
 	    font-weight: bold;
 	}
 
+	.sticky {
+		position: fixed;
+	    top: 0;
+	    background-color: rgba(255, 255, 255, 0.3);
+	    padding: 10px 50px 10px 10px;
+	    width: 100%;
+	    right: 0;
+	    opacity: 0.8;
 
+	    display: flex;
+	    justify-content: flex-end;
+	    align-items: center;
+	}
 
 
 /* map */
@@ -78,9 +107,21 @@
 	  height: auto;
 	  overflow: hidden;
 	  position: relative;
-
 	} 
-
+ 	.continent, .white-map, .continent p{
+ 		 	  /* CSS3淡出淡入效果,2秒 */
+	  -webkit-transition: opacity 2s ease-in-out;
+	  -moz-transition: opacity 2s ease-in-out;
+	  -o-transition: opacity 2s ease-in-out;
+	  transition: opacity 2s ease-in-out;
+ 	}
+	.continent:hover {
+		opacity: 0.7;	 
+	}
+	.white-map:hover,
+	.continent p:hover {
+		opacity: 0.5;	 
+	}
 	.continent >.senece-map{
 		width: 100%;
 		height: 650px;
@@ -124,7 +165,7 @@
 	    justify-content:  flex-start;
 	}
 
-	 
+ 
 
 /*footer*/
 	footer{
@@ -133,6 +174,7 @@
         overflow: hidden;
 		background: #0F4C75;
 		color: #FCFCFC;
+		position: relative;
 	}
 	footer >div{
 		width: 100%;
@@ -178,6 +220,20 @@
 		font-size: x-large;
 	}	 
 
+	.go-top{
+		z-index: 100;
+		/*background-color: rgba(0,0,0,.2);*/
+		color: gray;
+		opacity: 0.7;
+	    padding: 12px 14px;
+	    position: absolute;
+	    bottom: 20px;
+	    right: 20px;
+	}
+	.go-top:hover{
+		text-shadow: 1px 2px 3px darkslategrey;
+		color: white;
+	}
 /*手機 nav*/
 	.mob{
 
@@ -235,19 +291,28 @@
 	}
 
 
+
+
  /* ---------- 1200  ----------*/
 @media screen and (max-width: 1200px){
 	.menu div{
 	    margin-left: 24px;
 	}
-	.menu div >a{
-		font-size: 23px;
-	}
+	.menu div >a{}
 		
 }
 
 /* ---------- 1024 iPad  ----------*/
 @media screen and (max-width:1024px){
+	.menu div >a{
+		font-size: 20px;
+	}
+	.menu {
+    padding-right: 20px;
+	}
+	.menu div {
+    margin-left: 12px;
+	}
 	.continent >.senece-map{
 		height: 462px;
 	}
@@ -266,12 +331,18 @@
 	}
 }
 
+/* ---------- 920 menu ----------*/
+@media screen and (max-width: 920px){
+	.menu div >a {
+    font-size: 18px;
+	}
+}
+
 /* ---------- 768 iPad  ----------*/
 @media screen and (max-width: 768px){
-	
 	.mob_Open{display: block;}
-	
 	header>nav{display: none;}
+
 	
 	.continent >.senece-map{
 		height: 345px;
@@ -282,7 +353,10 @@
 	.map>div:last-child>p{
 		min-width: 100px;
 	}
- 
+ 	h3.reserve{
+	 	padding: 12px 18px;
+	    font-size: 22px;
+	}
 	footer >div {
   	  padding: 27px 8% 40px 5%;
 	}
@@ -306,23 +380,25 @@
 	}
 	.foo_left {
 	    float: none;
-	    padding-top: 6px;
-	    padding-left: 80%;
+	    padding-top: 56px;
 	}
+
 }
 
  /* ---------- mobile 414 ----------*/
 @media screen and (max-width: 414px){
-	header >.logo>img{
-		width: 42px;
-		height: 30px;
-		margin: 11px 0 0 16px;
+	header >.logo img{
+		width: 46px;
+   		height: 34px;
+        margin: 0px 0 0 16px;
 	}
 
 	footer table i:first-child{
 		padding-bottom: 30px;
 	}
-
+	footer table td{
+		vertical-align: baseline;
+	}
 	.map{
 		height: 1000px;
 		height: auto;
@@ -352,6 +428,17 @@
 	.asia{background-image: url('../images/Rectangle 200-1.jpg');}
 	.aus{background-image: url('../images/Rectangle 212-1.jpg');}
     .map.flex-box{flex-direction: column;}
+
+    .go-top{}
+    .fa-map-marker-alt{
+		padding-bottom:26px;
+	}
+	h3.reserve {
+	    margin: 0 auto;
+	    width: 48%;  
+	    padding-top: 20px;
+	    padding-bottom: 20px;
+	}
 }
 
  /* ---------- mobile 375 ----------*/

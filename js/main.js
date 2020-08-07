@@ -7,27 +7,49 @@ $(function(){
         $(".mob_nav").fadeOut();
     })
 
+    // 選單固定
+    $(window).scroll(function(){
+        if ($(window).scrollTop() >= 100 && $(window).width()>768) {
+            $('.menu').addClass('sticky');
+        }
+        else {
+            $('.menu').removeClass('sticky');
+        }
+    });
+
+
+    // gotop
+    $(".go-top").click(function(){
+        jQuery("html,body").animate({
+            scrollTop:0
+        },1500);
+    });
 
     //精選旅程輪播
-    if(!device.desktop()){
+    if(device.mobile()){
         //mobile
-         $('.owl-carousel').slick({
-        dots: true,
-        slidesToShow: 1,
+         $('.feature-carousel').slick({
+            dots: true,
+            autoplay: true,
+            slidesToShow: 1,
         });
     
     }else{
         //PC
-        $('.owl-carousel').slick({
-        dots: true,
-        slidesToShow: 3,
+        $('.feature-carousel').slick({
+          dots: true,
+          infinite: true,
+          autoplay: true,
+          slidesToShow: 3,
+          slidesToScroll: 3
         });
     }
-
+    //首頁輪播
     $('.carousel').slick({
         dots: true,
         fade:true,
+        autoplay: true,
         appendDots:$('.dots-area'),
-        });
+    });
 
 })//

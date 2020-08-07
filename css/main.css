@@ -34,7 +34,8 @@ html,body{
 		overflow: hidden;
 	}
 	.dots-area>.slick-dots {
-		bottom: -100px;
+		bottom: -120px;
+		z-index: 11;
 	}
 	div.dots-area{
 	 /* width: 100%;
@@ -49,16 +50,23 @@ html,body{
 	  background: Transparent;
 	  border: 0 none;*/
 	}
-
+    .feature .slick-dots li button:before{
+		color: #E0E0E0 !important;
+    }
+    .feature .slick-dots li.slick-active button:before{
+		color: #0F4C75 !important;
+    }
 	/*黑色區塊*/
 	.headerTop{
 		position: absolute;
-		width: 40%;
+		width: 60%;
 		height: 850px;
 		overflow: hidden;
 		right: 0px;
 		top: 0px;
+		opacity: 0.8;
 		background: #161616;
+		z-index: 10; /*配合slick dots設定*/
 		}
 
 
@@ -122,14 +130,18 @@ html,body{
 		color: #0F4C75;
 		padding: 94px 0 58px 0;
 	}
-	.owl-carousel{
-		margin-left: 6%;
+	.feature-carousel{
+		margin: 0 5%;
 	}
 	 .marl-6{
 	 	margin-left: 6%;
 	 }
-	 .owl-carousel img{
-		max-height: 327px;
+	  .feature-carousel .item{
+		 
+	 }
+	 .feature-carousel .item img{
+	 	width: 100%;
+		height: 327px;
 	 }
 	.feature >.flex-box > .mid{
 	    margin-left: 6%;
@@ -146,34 +158,23 @@ html,body{
 		width: 100%;
 		height: auto;
 		overflow: hidden;
+		padding-bottom: 30px;
 	}
+	
 	.golftable>.mob-table{
 		display: none;
 	}
 
 	.golftable>.table{
-		width: 100%;
+		width: 70%;
 		height: auto;
+		margin: 0 auto;
 		overflow: hidden;
 	}
 	.golftable>.reserve{
 		width: 100%;
 		height: auto;
 		padding: 30px 0 58px 0;
-	}
-	.golftable h3{
-		margin: 0 auto;
-		padding-top: 28px;
-		padding-bottom: 28px;
-		width: 20%; 
-	    text-align: center;
-
-		font-size: 24px;
-	    font-family: Noto Sans CJK TC;
-	    font-weight: bold;
-	    color: #FCFCFC;
-	    background: #EFA740;
-	    box-shadow: 0px 4px 11px rgba(239, 167, 64, 0.25);
 	}
 
 
@@ -185,12 +186,13 @@ html,body{
 		background-color: black;
 		color: #FCFCFC;
 		position: relative;
+		z-index: 1;
 	}
 
 	.content{
 		width: 100%;
 		position: absolute;
-		z-index: 99;
+		z-index: 5;
 		padding: 147px 6% 0 6%;
 	}
 	.content>.flex-box{
@@ -253,7 +255,7 @@ html,body{
 	}
 	.blue_R{
 		position: absolute;
-		z-index: 1;
+		z-index: 2;
 		top: 0;
 		left: 0;
 		width: 24%;
@@ -261,7 +263,7 @@ html,body{
 	}
 	.blue_L{
 	    position: absolute;
-	    z-index: 2;
+	    z-index: 3;
 	    right: 0px;
 	    bottom: 0px;
 	    width: 24%;
@@ -377,20 +379,7 @@ html,body{
 		height: auto;
 		padding: 39px 10px 58px 10px;
 	}
-	section h3{
-		margin: 0 auto;
-		padding-top: 22px;
-		padding-bottom: 22px;
-		width: 20%; 
-	    text-align: center;
 
-		font-size: 24px;
-	    font-family: Noto Sans CJK TC;
-	    font-weight: bold;
-	    color: #FCFCFC;
-	    background: #EFA740;
-	    box-shadow: 0px 4px 11px rgba(239, 167, 64, 0.25);
-	}
 
 
 /* ---------- 1200  ----------*/
@@ -430,7 +419,7 @@ html,body{
 		max-height: 604px;	
 	}
 	.dots-area>.slick-dots {
-       bottom: 174px;
+       bottom: 115px;
 	}
 	.feature h1,
 	.schedule h1,
@@ -449,9 +438,8 @@ html,body{
 		padding-right: 5px;
 		line-height: 60px;
 	}
-	.golftable h3{
-		padding-top: 20px;
-		padding-bottom: 20px;		
+	.golftable>.table{
+		width: 90%;
 	}
 	.content {padding: 104px 6% 0 6%;}
 	
@@ -473,7 +461,7 @@ html,body{
 	}
 	.map p{font-size: 20px;}
 }
-
+/* ---------- 830  ----------*/
 @media screen and (max-width: 830px){
 	.introR>h1 {
 		font-size: 32px;
@@ -486,6 +474,22 @@ html,body{
 
 /* ---------- 768 iPad  ----------*/
 @media screen and (max-width: 768px){
+		.content>.flex-box {
+    flex-direction: column;
+}
+.content >.flex-box>.aboug-img {
+    width: 55%;
+}
+.intro {
+    height: 920px;
+}
+.introR {
+    width: 100%;
+    padding: 3% 0 0 0%;
+}
+.introR hr {
+    margin-bottom: 7px;
+}
 	.headerInfo {
 	    top: 27%;
 	    left: 11%;
@@ -495,7 +499,7 @@ html,body{
 	    margin-bottom: 16px;
 	}
 	.dots-area>.slick-dots {
-	    bottom: 178px;
+	    bottom: 115px;
 	}
 	.feature{
 		padding-bottom: 70px;
@@ -507,10 +511,11 @@ html,body{
 	    font-size: 40px;
 	}
 	.feature hr  {
-	    width: 120px;
+	    width: 100px;
+	    margin: 18px 30px;
 	}
-	.golftable>.reserve {
-	    padding: 30px 0 30px 0;
+	.golftable>.table{
+		width: 100%;
 	}
 		.map p{font-size: 18px;}
 		.schedule span{
@@ -550,12 +555,14 @@ html,body{
 	section> div:last-child {
 	    padding: 21px 10px 31px 10px;
 	}
-	section h3 {
-	 	padding-bottom: 18px;
-	    padding-top: 18px;  
+}
+/* ---------- 616 調整  ----------*/
+@media screen and (max-width: 616px){
+    .feature hr {
+    width: 80px;
+    margin: 18px 10px;
 	}
 }
-
 
 /* ---------- mobile 414 ----------*/
 
@@ -593,14 +600,15 @@ html,body{
 	 display: block;
 	}
 	.dots-area>.slick-dots {
-    bottom: 100px;
+	    top: 616px;
+	/*     bottom: 0px; */
 	}
 
 
 
 /*feature*/
 	.feature{
-		height: 460px;
+		height: 530px;
 	}
 	.feature h1{
 		width: 144px;
@@ -623,8 +631,8 @@ html,body{
 		margin-bottom: 5px;
 	}
 	
-	.owl-carousel{
-		margin-left: 0%;
+	.feature-carousel{
+		margin: 0%;
 	}
 
 

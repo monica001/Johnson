@@ -41,6 +41,7 @@ html,body{
 		height: 850px;
 		right: 0px;
 		top: 0px;
+		opacity: 0.8;
 		background: #161616;
 		}
 
@@ -108,7 +109,7 @@ html,body{
 
 	.course>div{
 		width: 100%;
-		height: 2033px;
+		height: 2340px;
 		padding-bottom: 96px;
 		overflow: hidden;
 	}
@@ -123,65 +124,62 @@ html,body{
 		width: 100%;
 	    height: auto;
 	    overflow: hidden;
-		padding: 217px 25% 128px 6%;
+		padding: 217px 5% 128px 29%;
 	}
 	.content>.intro>p{
 		font-family: Noto Sans CJK TC;
-		font-size: 24px;
+		font-size: 20px;
 		line-height: 36px;
-		/* White */
 		color: #FCFCFC;
 	}
-	.content>.introImg1,
-	.content>.introImg2,
-	.content>.introImg3{
+	.content>.intro>p:first-child{
+		padding-bottom: 28px;
+	}
+	.content .course-img-Wrap{
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		padding: 0 5%;
+	}
+
+	.introImg1,
+	.introImg2,
+	.introImg3{
 		width: 100%;
 		height: auto;
 		overflow: hidden;
 	}
 
-	.content>.introImg1{
-		padding: 0 0 30px 24%;
-
+	.introImg1,.introImg2{
+		padding-bottom: 45px;
 	}
-	.content>.introImg2{
-		text-align: end;
-		padding-bottom: 30px;
+	.course-img-Wrap img{
+		/* height: auto; */
+		display: inline-block;
 	}
-
-	.content>.introImg3{
-		text-align: start;
-		/* padding-bottom: 96px; */
-	}
-	.content>.introImg1>img{
+	.introImg1>img{
 		width: 100%;
-		height: 583px;
-		max-width: 1097px;
-		max-height: 583px;
+		height: 726px;
+	} 		
+	.introImg2>img:first-child{
+		width: 59%;
+		height: 458px;
+		margin: 0 3% 0 0;
+	}
+	.introImg2>img:nth-child(2){
+		width: 37.5%;
+		height: 458px;
 		float: right;
 	}
-	.content>.introImg2>img:first-child{
-		width: 60%;
-		height: 446px;
-		margin: 0 2% 0px 3%;
-		display: inline-block;
+	.introImg3>img:first-child{
+		width: 40%;
+		height: 447px;
+		margin: 0 3% 0 0;
 	}
-	.content>.introImg2>img:nth-child(2){
-		width: 33%;
-		height: 446px;
-		display: inline-block;
-		 
-	}
-	.content>.introImg3>img:first-child{
-		width: 39%;
-		height: 284px;
-		margin: 0 2% 0 0;
-		display: inline-block;
-	}
-	.content>.introImg3>img:nth-child(2){
-		width: 39%;
-		height: 284px;
-		display: inline-block;
+	.introImg3>img:nth-child(2){
+		width: 56%;	
+		height: 447px;
+		float: right;
 	}
 
 	.blue_R{
@@ -191,7 +189,6 @@ html,body{
 		width: 24%;
 		height: 720px;
 	}
-
 
 /* hotel */
 	.hotel{
@@ -290,22 +287,6 @@ html,body{
 		padding: 45px 0;
 	}
 
-	section >h3{
-		margin: 0 auto;
-		padding-top: 22px;
-		padding-bottom: 22px;
-		width: 20%; 
-	    text-align: center;
-
-		font-size: 24px;
-	    font-family: Noto Sans CJK TC;
-	    font-weight: bold;
-	    color: #FCFCFC;
-	    background: #EFA740;
-	    box-shadow: 0px 4px 11px rgba(239, 167, 64, 0.25);
-	}
-
-
 
 /* ---------- 1024 iPad  ----------*/
 @media screen and (max-width: 1024px){
@@ -317,13 +298,10 @@ html,body{
 		/* width: 60%; */
 		height: 604px;
 	}
-
-
 	.headerInfo{
 	     top: 41%;
 	     left: 48%;
 	}
-
 	.headerInfo>h1{	
 		font-size: 42px;
 		padding-right: 32px;
@@ -336,26 +314,26 @@ html,body{
 		font-size: 26px;
 	}
 	.content>.intro {
-		padding: 154px 25% 90px 6%;
+		padding: 154px 6% 90px 6%;
 	}
 	.course>div{
 		height: 1521px;
 		padding-bottom: 67px;
 	}
-	.content>.introImg1>img{
+	.introImg1>img{
 		height: 408px;
-		/* max-height: 583px; */
 	}
-	.content>.introImg2>img:first-child,
-	.content>.introImg2>img:nth-child(2){
+	.introImg2>img:first-child,
+	.introImg2>img:nth-child(2){
 		height: 312px;
 	}
 
-	.content>.introImg3>img:first-child,
-	.content>.introImg3>img:nth-child(2){
+	.introImg3>img:first-child,
+	.introImg3>img:nth-child(2){
 		height: 199px;
 	}
 	 .hotel {height: 1511px;}
+	 .hotel-hr-box{width: 80px;}
 	 .img1 >img,.img2 >img {height: 262px;}
 	 .img3 >img,.img4 >img {height: 380px;}
 	 .img5 >img {height: 220px;}
@@ -368,16 +346,34 @@ html,body{
 	.headerInfo {
 	    top: 25%;
 	}
-	.blue_R{height: 520px;}
+	.blue_R{
+		height: 520px;
+	}
 	.course>div {
-	    height: 1484px;
+	    height: 1250px;
 	    padding-bottom: 50px;
 	}
 	.content>.intro {
-	    padding: 115px 20% 48px 6%;
+		height: 440px;
+	    padding: 115px 6% 28px 6%;
+	}
+	.introImg1, .introImg2 {
+   		 padding-bottom: 25px;
+	}
+	.introImg1>img{
+		height: 313px;
+	}
+	.introImg2>img:first-child,
+	.introImg2>img:nth-child(2){
+		height: 240px;
+	}
+
+	.introImg3>img:first-child,
+	.introImg3>img:nth-child(2){
+		height: 153px;
 	}
 	.hotel p {
-	    font-size: 22px;
+	    font-size: 20px;
 	    padding: 28px 0 21px 0;  
 	}
 	.hotel-hr-box {
@@ -396,38 +392,49 @@ html,body{
 	section {
 	    padding: 24px 0;
 	}
-	section >h3 {
-		padding-top: 18px;
-		padding-bottom: 18px;
+}
+/* ---------- 616 調整  ----------*/
+@media screen and (max-width: 616px){
+	.hotel .img1 .hotel-hr-box,
+	.hotel .img2 .hotel-hr-box{
+		display: block;
+	}
+	.hotel {
+        height: 1140px;
+    }
+    .course>div {
+    	height: 1330px;
+	}
+	.content>.intro {
+    height: 540px;
 	}
 }
-
-/* ---------- 414  ----------*/
+/* ---------- 414 Mobile ----------*/
 @media screen and (max-width: 414px){
 	.bg-area{
-	height: 650px;
+		height: 650px;
 	}
 	.headerTop {
-    height: 650px;
-    width: 39%;
+	    height: 650px;
+	    width: 39%;
 	}
 	
 	.headerInfo {
-    top: 33%;
-    left: 13%;
+	    top: 33%;
+	    left: 13%;
 	}
 	.headerInfo>h1{	
-	font-size: 60px;
-	margin-bottom: 20px;
+		font-size: 60px;
+		margin-bottom: 20px;
 	}
 	.headerInfo>hr{
 		display: none;
 	}
 	.headerInfo>div>h4{
-	font-size: 24px;
+		font-size: 24px;
 	}
 	.headerInfo>div>hr{
-	display: inline-block;
+		display: inline-block;
 	}
 	.bg-area>.bg-img>img{
 		max-height: 650px;	
@@ -439,9 +446,6 @@ html,body{
 	    width: 30%;
 	    height: 239px;
 	}
-	.course {
-    height: 1200px;}
-	
 	.content{
 		padding: 0px 0 0 0px;
 	}
@@ -452,47 +456,24 @@ html,body{
 	.intro p {
 	    font-size: 24px;
 	}
-
-	.content>.introImg1{
-		padding: 0 0 16px 0;
+	.course>div{
+		height: 1020px;
 	}
-	.content>.introImg1>img{
-		height: 200px;
+	.introImg1, .introImg2 {
+   		 padding-bottom: 15px;
 	}
-	.content>.introImg2{
-		padding-bottom: 18px;
+	.introImg1>img{
+		height: 176px;
 	}
-	.content>.introImg2>img:first-child{
-		width: 60%;
-		height: 119px;
-		margin: 0 18px 0px 0;
+	.introImg2>img:first-child,
+	.introImg2>img:nth-child(2){
+		height: 108px;
 	}
-	.content>.introImg2>img:nth-child(2){
-		width: 34%;
-		height: 119px;	 
-	}
-	.content>.introImg3{
-		text-align: start;
-		padding-bottom: 24px;
-	}
-	.content>.introImg3>img:first-child{
-		width: 78%;
-		height: 148px;
-		margin: 0 0 16px 0;
-		display: block;
-	}
-	.content>.introImg3>img:nth-child(2){
-		width: 80%;
-		height: 148px;
-		margin-left: 85px;
-		display: block;
+	.introImg3>img:first-child,
+	.introImg3>img:nth-child(2){
+		height: 108px;
 	}
 
-	/* .content>.introImg1>img{height: 226px;}	 
-	.content>.introImg2>img:first-child{height: 134px;}
-	.content>.introImg2>img:nth-child(2){height: 134px;	 }
-	.content>.introImg3>img:first-child{height: 167px;}
-	.content>.introImg3>img:nth-child(2){height: 167px;} */
 
 /*Trump Turnberry hotel*/
 	.blue{height: 1345px;}
@@ -539,7 +520,7 @@ html,body{
 	    width: 130px;
 	}
 	.hotel hr {
-    margin-left: 22px;
+    	margin-left: 22px;
 	}
 	.img1>img{height: 294px;}
 	.img2>img{height: 294px;}  
@@ -551,19 +532,10 @@ html,body{
 	section {
 	    padding: 36px 0;
 	}
-	section h3 {
-	    margin: 0 auto;
-	    width: 48%;  
-	    padding-top: 20px;
-	    padding-bottom: 20px;
-	}
 }
 
 
 @media screen and (max-width: 375px){
-	.course{
-		height: 1244px;
-	}
 	.hotel {
   		height: 2604px;
 	}
