@@ -37,13 +37,12 @@ html,body{
 	}
 	.headerTop{
 		position: absolute;
-		width: 60%;
+		width: 32%;
 		height: 850px;
 		right: 0px;
 		top: 0px;
-		opacity: 0.8;
-		background: #161616;
-		}
+		background: rgba(22,22,22,0.8);
+	}
 
 
 
@@ -51,7 +50,7 @@ html,body{
 	.headerInfo{
 	     position: absolute;
 	     top: 41%;
-	     left: 48%;
+	     left: 43%;
 	}
 
 	.headerInfo>h1{	
@@ -299,8 +298,8 @@ html,body{
 		height: 604px;
 	}
 	.headerInfo{
-	     top: 41%;
-	     left: 48%;
+	     top: 31%;
+	     left: 41%;
 	}
 	.headerInfo>h1{	
 		font-size: 42px;

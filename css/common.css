@@ -24,6 +24,10 @@
 		padding-bottom: 22px;
 		width: 20%; 
 	    text-align: center;
+		cursor: pointer;
+		-webkit-transition: 0.3s;
+           -moz-transition: 0.3s;
+		        transition: 0.3s;
 
 		font-size: 24px;
 	    font-family: Noto Sans CJK TC;
@@ -31,6 +35,11 @@
 	    color: #FCFCFC;
 	    background: #EFA740;
 	    box-shadow: 0px 4px 11px rgba(239, 167, 64, 0.25);
+	}
+	h3.reserve:hover,
+	.headerbtm:hover
+	{
+		background: #0F4C75;
 	}
  /*header*/
 	header{

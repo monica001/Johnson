@@ -128,14 +128,7 @@ html,body{
 		padding-top: 15px;
 		padding-bottom: 15px;
 		width: 20%; 
-	    text-align: center;
-
 		font-size: 24px;
-	    font-family: Noto Sans CJK TC;
-	    font-weight: bold;
-	    color: #FCFCFC;
-	    background: #EFA740;
-	    box-shadow: 0px 4px 11px rgba(239, 167, 64, 0.25);
 	}
 	.googleMap{
 		width: 100%;
